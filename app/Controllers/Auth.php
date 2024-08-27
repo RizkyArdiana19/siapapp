@@ -5,7 +5,12 @@ namespace App\Controllers;
 use Myth\Auth\Models\UserModel;
 
 class Auth extends BaseController
-{
+{   
+    public function login()
+    {
+        return view('auth/login');
+    }
+    
     public function register()
     {
         helper('form');
